@@ -34,9 +34,12 @@ export const Layout = ({ children }: { children: ReactNode }) => {
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
         <header className="container mx-auto p-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold">Sahana Jagadeesh Tavari</h1>
+          <div className="flex items-center gap-4">
+            <a href="/about" className="text-sm underline hover:text-primary transition">About</a>
           <button onClick={toggleTheme} aria-label="Toggle Dark Mode" className="text-xl">
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
+          </div>
         </header>
         <main className="container mx-auto px-4 py-8">{children}</main>
         <footer className="container mx-auto p-4 text-center text-sm">
